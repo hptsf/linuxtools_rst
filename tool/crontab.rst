@@ -14,7 +14,7 @@ crontab 定时任务
 -----------
 - -u user：用来设定某个用户的crontab服务；
 - file：file是命令文件的名字,表示将file做为crontab的任务列表文件并载入crontab。如果在命令行中没有指定这个文件，crontab命令将接受标准输入（键盘）上键入的命令，并将它们载入crontab。
-- -e：编辑某个用户的crontab文件内容。如果不指定用户，则表示编辑当前用户的crontab文件。
+- -e：编辑某个用户的crontab文件内容。如果不指定用户，则表示编辑当前用户的crontab文件（第一次打开会提示选择编辑器）。
 - -l：显示某个用户的crontab文件内容，如果不指定用户，则表示显示当前用户的crontab文件内容。
 - -r：从/var/spool/cron目录中删除某个用户的crontab文件，如果不指定用户，则默认删除当前用户的crontab文件。
 - -i：在删除用户的crontab文件时给确认提示。
